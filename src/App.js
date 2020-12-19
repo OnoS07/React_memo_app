@@ -1,4 +1,6 @@
 import React from 'react';
+import './App.css';
+
 import TodoList from './TodoList'
 import Form from './Form';
 
@@ -29,7 +31,7 @@ class App extends React.Component {
 
     render() {
       return (
-        <div>
+        <div className = "app">
           <h1>TODOアプリ</h1>
           <Form 
             value = {this.state.value} 
